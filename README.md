@@ -15,7 +15,7 @@ Economic losses due to delays
 Despite the availability of traffic data, it is underutilized in proactive planning and decision-making.
 
 💡 Solution
-
+--
 MOVESMARTKE offers a centralized AI-driven solution that:
 
 Integrates data from NTSA, GPS fleet systems, and mobile sensors
@@ -27,7 +27,7 @@ Recommends alternate routes for reduced travel time
 Provides real-time dashboards and forecasts for planners and commuters
 
 🔧 Core Features
-
+--
 📍 AI Route Optimizer – Suggests fuel-efficient, time-saving routes
 
 📊 Urban Planning Dashboard – Visual tools to assist transport officials
@@ -39,7 +39,7 @@ Provides real-time dashboards and forecasts for planners and commuters
 🌐 Web & Mobile Access – User-friendly and responsive for public and officials
 
 🎯 Target Users
-
+--
 Urban and transport planners
 
 County governments and road authorities
@@ -49,7 +49,7 @@ Logistics and public transport operators
 Daily commuters and delivery drivers
 
 🌱 Impact
-
+--
 Promotes fuel efficiency and reduces emissions
 
 Supports smarter urban development
@@ -57,7 +57,7 @@ Supports smarter urban development
 Improves daily commute experiences
 
 👥 Project Team
-
+--
 | Name            | Role                               |
 | --------------- | ---------------------------------- |
 | Eugene Kipkoech | Frontend Development               |
