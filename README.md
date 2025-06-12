@@ -1,5 +1,5 @@
 MOVESMARTKE
-
+---
 MOVESMARTKE is an AI-powered traffic optimization dashboard developed to reduce fuel consumption and ease traffic congestion in urban Kenya. The platform supports renewable energy goals by using real-time and historical traffic data from systems like NTSA, KENHA, and Nairobi County to generate efficient transport routes and guide strategic urban planning.
 
 🚦 Problem Statement
