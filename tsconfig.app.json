@@ -6,7 +6,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
-     "_comment1": "Bundler mode",
+     // Bundler mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
@@ -14,7 +14,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-     "_comment2": "Linting",
+    // Linting
     "strict": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
