@@ -1,4 +1,5 @@
 
+import Map from "@/components/Map";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -100,15 +101,7 @@ const RouteOptimizer = () => {
             {/* Map Placeholder */}
             <Card className="h-96">
               <CardContent className="h-full p-0">
-                <div className="h-full bg-gradient-to-br from-green-100 to-blue-100 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <MapIcon className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                    <h3 className="text-lg font-semibold text-gray-700 mb-2">Interactive Route Map</h3>
-                    <p className="text-gray-500">
-                      Map integration will display optimized routes with real-time traffic data
-                    </p>
-                  </div>
-                </div>
+                <Map />
               </CardContent>
             </Card>
 
