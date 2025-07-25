@@ -13,7 +13,6 @@ const Navigation = () => {
     { path: "/", label: "Home", icon: NavigationIcon },
     { path: "/route-optimizer", label: "Route Optimizer", icon: NavigationIcon },
     { path: "/dashboard", label: "Urban Dashboard", icon: BarChart3 },
-    { path: "/energy-impact", label: "Energy Impact", icon: Zap },
   ];
 
   const NavLinks = ({ mobile = false }) => (

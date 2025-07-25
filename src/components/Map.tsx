@@ -9,11 +9,16 @@ import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker?worker';
 
 mapboxgl.workerClass = MapboxWorker;
 
-const Map = () => {
+interface MapProps {
+  origin: string;
+  destination: string;
+}
+
+const Map = ({ origin, destination }: MapProps) => {
   const mapContainer = useRef<HTMLDivElement | null>(null);
   const map = useRef<mapboxgl.Map | null>(null);
-  const [lng, setLng] = useState(-70.9);
-  const [lat, setLat] = useState(42.35);
+  const [lng, setLng] = useState(36.8219);
+  const [lat, setLat] = useState(-1.2921);
   const [zoom, setZoom] = useState(9);
 
   useEffect(() => {
@@ -40,10 +45,31 @@ const Map = () => {
       accessToken: mapboxgl.accessToken,
       unit: 'metric',
       profile: 'mapbox/driving',
+      controls: {
+        inputs: true, // Disable input boxes
+        instructions: true, // Disable instructions
+      },
     });
 
     map.current.addControl(directions, 'top-left');
+    
+    // Store directions instance in ref for later use
+    (map.current as any)._directions = directions;
+
   }, [lat, lng, zoom]);
+
+  useEffect(() => {
+    if (!map.current || !(map.current as any)._directions) return;
+
+    const directions = (map.current as any)._directions;
+
+    if (origin) {
+      directions.setOrigin(origin);
+    }
+    if (destination) {
+      directions.setDestination(destination);
+    }
+  }, [origin, destination]);
 
   return (
     <div

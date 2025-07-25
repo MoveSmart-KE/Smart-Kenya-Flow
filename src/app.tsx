@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/index";
 import RouteOptimizer from "./pages/RouteOptimizer";
 import Dashboard from "./pages/Dashboard";
-import EnergyImpact from "./pages/EnergyImpact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,7 +21,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/route-optimizer" element={<RouteOptimizer />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/energy-impact" element={<EnergyImpact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
